@@ -1,0 +1,26 @@
+Public Sub fillScholaro()
+Dim rng As Range
+Dim tm As Integer
+Dim ans As VbMsgBoxResult
+Set rng = Application.InputBox("Select the range of cells containing Subjects", "Choose All Subjects", Type:=8)
+tm = Application.InputBox("Enter Delay time for you to goto the Scholaro Website", "Delay Times", Type:=1)
+ans = MsgBox("Do you have " & CStr(rng.Count) & " rows in the Scholaro website?" & Chr(10) & "Click ok if you are ready to got the website and finisheveything in " & CStr(tm) & "seeconds", vbOKCancel)
+If ans = vbOK Then
+Application.Wait (Now() + tm / 60 / 60 / 24)
+For Each cel In rng
+    SendKeys cel.Value, True
+    SendKeys "{TAB}", True
+    SendKeys cel.Offset(0, 1).Value, True
+    SendKeys "{TAB}", True
+    SendKeys cel.Offset(0, 2).Value, True
+    SendKeys "{TAB}", True
+    SendKeys "{TAB}", True
+Next
+    SendKeys "{TAB}", True
+    SendKeys "{TAB}", True
+    SendKeys "{TAB}", True
+    SendKeys "{TAB}", True
+    SendKeys "~ (tilde)", True
+End If
+End Sub
+
