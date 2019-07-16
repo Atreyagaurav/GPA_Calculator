@@ -4,6 +4,7 @@ Excel sheet and Program for automating the GPA calculator input into Scholaro GP
 * Ms. Excel : I have done this in Ms. Excel 2016, I don't know if it'll work in lower versions.
 * Web Browser
 # Steps
+The video tutorial including these steps are in [here](https://youtu.be/Q6Ub8ChwM0Q)
 * First fill out all your subjects, credits and marks as in the sheet shown. Fill out the marks out of 100.
 * Then open [https://www.scholaro.com/gpa-calculator/](https://www.scholaro.com/gpa-calculator/) in browser.
 * make sure it has adequate rows to contain your scores.
