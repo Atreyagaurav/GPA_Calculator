@@ -16,3 +16,6 @@ The video tutorial including these steps are in [here](https://youtu.be/Q6Ub8Chw
 * click ok to the dialog box asking if everything is ok. Then immediately go to the website and click at the first input box as if you were to type something there.
 * wait for the program to complete.
 * done Your GPA will load slowly.
+# Note:
+Please enter the grades out of 100, that is your obtained points/total point * 100
+If you got 24 out of 25, you should enter 25 in credit and 96 (=24/25*100) in obtained grade ('out of 100' column in excel)
